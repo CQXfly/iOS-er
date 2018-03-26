@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.7.0)
+  - Kingfisher (4.6.4)
+  - MarkdownView (1.1.0)
+  - QXKit (0.1.02)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - SnapKit (4.0.0)
+  - Yoga (1.6.0)
+  - YogaKit (1.6.0):
+    - Yoga (~> 1.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - MarkdownView
+  - QXKit
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - SnapKit (~> 4.0.0)
+  - YogaKit
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
+  MarkdownView: 80db8e9a27a6c6cc22615e644e3e85c06065bab7
+  QXKit: 83045e6ebfae5bbc915b8e61e3689da2c2bef2a4
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Yoga: 81670877477311136b1b3f69a6307ce62e1c89cf
+  YogaKit: 8fe0ddd21673226c0b6077fc3ad5c8fa6cda722e
+
+PODFILE CHECKSUM: 26403de15a68b575b9be4e06430fd1f640e79134
+
+COCOAPODS: 1.4.0

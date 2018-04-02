@@ -93,28 +93,28 @@ struct MarkDownParser {
             
             if(lastDom.type == .StartTag && dom.type != .StartTag && dom.type != .EndTag){
                 if(lastDom.data == "h1"){
-                    results.append(.H1(text: dom.data))
+                    results.append(.H1(text: dom.data.htmlencode()))
                 }
                 if(lastDom.data == "h2"){
-                    results.append(.H2(text: dom.data))
+                    results.append(.H2(text: dom.data.htmlencode()))
                 }
                 if(lastDom.data == "p"){
-                    results.append(.P(text: dom.data))
+                    results.append(.P(text: dom.data.htmlencode()))
                 }
                 
                 
                 if(lastDom.data == "br"){
-                    results.append(.Br(text: dom.data))
+                    results.append(.Br(text: dom.data.htmlencode()))
                     
                 }
                 
                 if(lastDom.data == "li"){
-                    results.append(.Li(text: dom.data))
+                    results.append(.Li(text: dom.data.htmlencode()))
                     
                 }
                 
                 if(lastDom.data == "code"){
-                    results.append(.Code(text: dom.data))
+                    results.append(.Code(text: dom.data.htmlencode()))
                     
                 }
                 
@@ -127,17 +127,17 @@ struct MarkDownParser {
                 }
                 
                 if(lastDom.data == "span"){
-                    results.append(.Text(text: dom.data))
+                    results.append(.Text(text: dom.data.htmlencode()))
                     
                 }
                 
                 if(lastDom.data == "text"){
-                    results.append(.Text(text: dom.data))
+                    results.append(.Text(text: dom.data.htmlencode()))
                     
                 }
                 
                 if(lastDom.data == "strong"){
-                    results.append(.Strong(text: dom.data))
+                    results.append(.Strong(text: dom.data.htmlencode()))
                     
                 }
                 
@@ -151,7 +151,7 @@ struct MarkDownParser {
             }
             
             if lastDom.type == .EndTag && dom.type == .Char {
-                results.append(.Text(text: dom.data))
+                results.append(.Text(text: dom.data.htmlencode()))
             }
             
             
@@ -167,5 +167,17 @@ struct MarkDownParser {
 extension CGFloat {
     init(_ string:String) {
         self.init(Double(string)!)
+    }
+}
+
+extension String {
+    func htmlencode()->String{
+        var tmp = self
+        tmp = tmp.replacingOccurrences(of: "&quot;", with: "\"")
+        tmp = tmp.replacingOccurrences(of: "&gt;", with: ">")
+        tmp = tmp.replacingOccurrences(of: "&lt;", with: "<")
+        tmp = tmp.replacingOccurrences(of: "&apos;", with: "'")
+        tmp = tmp.replacingOccurrences(of: "&amp;", with: "&")
+        return tmp
     }
 }

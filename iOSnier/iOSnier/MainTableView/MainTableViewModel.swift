@@ -18,6 +18,8 @@ public class MainTableViewModel {
     }
 //    http://iosre.com/u/zoumadeng.json?stats=false&_=1521687164901
 //    http://7xibfi.com1.z0.glb.clouddn.com/user_avatar/bbs.iosre.com/zhang/50/4875_1.png
+    
+//    http://iosre.com/latest?exclude_category_ids%5B%5D=12&no_definitions=true&no_subcategories=false&page=1&slow_platform=20&_=1522480495737  
     /// getdatafromServer
     func fetchData() {
         let url = "http://iosre.com/latest.json?order=default&_=\(Date.currentTimeStamp(.Long))"

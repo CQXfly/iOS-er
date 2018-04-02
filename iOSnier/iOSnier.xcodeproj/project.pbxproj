@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9829A75D206F68EC001D9B20 /* HTNStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829A755206F68EA001D9B20 /* HTNStateMachine.swift */; };
+		9829A75E206F68EC001D9B20 /* HTNMultilingualism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829A756206F68EA001D9B20 /* HTNMultilingualism.swift */; };
+		9829A75F206F68EC001D9B20 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829A757206F68EA001D9B20 /* StringExtension.swift */; };
+		9829A760206F68EC001D9B20 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829A758206F68EA001D9B20 /* Node.swift */; };
+		9829A76C206F68F4001D9B20 /* HTMLTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829A766206F68F4001D9B20 /* HTMLTokenizer.swift */; };
+		9829A76D206F68F4001D9B20 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829A767206F68F4001D9B20 /* Element.swift */; };
+		9829A76E206F68F4001D9B20 /* HTMLToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829A768206F68F4001D9B20 /* HTMLToken.swift */; };
+		9829A76F206F68F4001D9B20 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829A769206F68F4001D9B20 /* Document.swift */; };
+		9829A770206F68F4001D9B20 /* HTMLTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829A76A206F68F4001D9B20 /* HTMLTreeBuilder.swift */; };
+		9829A771206F68F4001D9B20 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829A76B206F68F4001D9B20 /* Attribute.swift */; };
+		9829A773206F690B001D9B20 /* MarkDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829A772206F690B001D9B20 /* MarkDownView.swift */; };
+		9829A775206F693D001D9B20 /* MarkDownViewParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829A774206F693D001D9B20 /* MarkDownViewParser.swift */; };
 		984110AA206507010046E706 /* Collect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984110A9206507010046E706 /* Collect.storyboard */; };
 		984110AC20650BD00046E706 /* DateFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984110AB20650BD00046E706 /* DateFile.swift */; };
 		984110AE20652D970046E706 /* 设计想法 in Resources */ = {isa = PBXBuildFile; fileRef = 984110AD20652D970046E706 /* 设计想法 */; };
@@ -50,6 +62,18 @@
 /* Begin PBXFileReference section */
 		0686260C92D1792AD05DB46E /* Pods-iOSnier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSnier.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSnier/Pods-iOSnier.debug.xcconfig"; sourceTree = "<group>"; };
 		26E6FBE451B80436DCCBCB1D /* Pods-iOSnier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSnier.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSnier/Pods-iOSnier.release.xcconfig"; sourceTree = "<group>"; };
+		9829A755206F68EA001D9B20 /* HTNStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTNStateMachine.swift; sourceTree = "<group>"; };
+		9829A756206F68EA001D9B20 /* HTNMultilingualism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTNMultilingualism.swift; sourceTree = "<group>"; };
+		9829A757206F68EA001D9B20 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		9829A758206F68EA001D9B20 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		9829A766206F68F4001D9B20 /* HTMLTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLTokenizer.swift; sourceTree = "<group>"; };
+		9829A767206F68F4001D9B20 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		9829A768206F68F4001D9B20 /* HTMLToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLToken.swift; sourceTree = "<group>"; };
+		9829A769206F68F4001D9B20 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		9829A76A206F68F4001D9B20 /* HTMLTreeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLTreeBuilder.swift; sourceTree = "<group>"; };
+		9829A76B206F68F4001D9B20 /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		9829A772206F690B001D9B20 /* MarkDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownView.swift; sourceTree = "<group>"; };
+		9829A774206F693D001D9B20 /* MarkDownViewParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownViewParser.swift; sourceTree = "<group>"; };
 		984110A9206507010046E706 /* Collect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collect.storyboard; sourceTree = "<group>"; };
 		984110AB20650BD00046E706 /* DateFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFile.swift; sourceTree = "<group>"; };
 		984110AD20652D970046E706 /* 设计想法 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "设计想法"; sourceTree = "<group>"; };
@@ -122,6 +146,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9829A750206F68D4001D9B20 /* MarkDownView */ = {
+			isa = PBXGroup;
+			children = (
+				9829A765206F68F4001D9B20 /* HTML */,
+				9829A754206F68EA001D9B20 /* HTNFundation */,
+				9829A772206F690B001D9B20 /* MarkDownView.swift */,
+				9829A774206F693D001D9B20 /* MarkDownViewParser.swift */,
+			);
+			path = MarkDownView;
+			sourceTree = "<group>";
+		};
+		9829A754206F68EA001D9B20 /* HTNFundation */ = {
+			isa = PBXGroup;
+			children = (
+				9829A755206F68EA001D9B20 /* HTNStateMachine.swift */,
+				9829A756206F68EA001D9B20 /* HTNMultilingualism.swift */,
+				9829A757206F68EA001D9B20 /* StringExtension.swift */,
+				9829A758206F68EA001D9B20 /* Node.swift */,
+			);
+			path = HTNFundation;
+			sourceTree = "<group>";
+		};
+		9829A765206F68F4001D9B20 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				9829A766206F68F4001D9B20 /* HTMLTokenizer.swift */,
+				9829A767206F68F4001D9B20 /* Element.swift */,
+				9829A768206F68F4001D9B20 /* HTMLToken.swift */,
+				9829A769206F68F4001D9B20 /* Document.swift */,
+				9829A76A206F68F4001D9B20 /* HTMLTreeBuilder.swift */,
+				9829A76B206F68F4001D9B20 /* Attribute.swift */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
 		984110AF2068CB660046E706 /* Replys */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +216,7 @@
 		98C43F7420624C3100FC1A57 /* iOSnier */ = {
 			isa = PBXGroup;
 			children = (
+				9829A750206F68D4001D9B20 /* MarkDownView */,
 				984110AF2068CB660046E706 /* Replys */,
 				98CA1BA22063888A0080BF9C /* Detail */,
 				98C43FE32062579A00FC1A57 /* MainTableView */,
@@ -377,6 +437,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
 				"${BUILT_PRODUCTS_DIR}/YogaKit/YogaKit.framework",
 			);
@@ -389,6 +450,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YogaKit.framework",
 			);
@@ -419,16 +481,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9829A76D206F68F4001D9B20 /* Element.swift in Sources */,
+				9829A76E206F68F4001D9B20 /* HTMLToken.swift in Sources */,
+				9829A775206F693D001D9B20 /* MarkDownViewParser.swift in Sources */,
 				98CA1BA820638FEB0080BF9C /* DetailViewController.swift in Sources */,
 				984110AC20650BD00046E706 /* DateFile.swift in Sources */,
+				9829A773206F690B001D9B20 /* MarkDownView.swift in Sources */,
+				9829A75E206F68EC001D9B20 /* HTNMultilingualism.swift in Sources */,
+				9829A75D206F68EC001D9B20 /* HTNStateMachine.swift in Sources */,
 				98CA1BA6206388F00080BF9C /* DetailModel.swift in Sources */,
+				9829A75F206F68EC001D9B20 /* StringExtension.swift in Sources */,
+				9829A76F206F68F4001D9B20 /* Document.swift in Sources */,
 				984110B62068D5380046E706 /* ReplyViewModel.swift in Sources */,
 				98C43FE22062554500FC1A57 /* NetCoreKit.swift in Sources */,
 				98C43F7820624C3100FC1A57 /* ViewController.swift in Sources */,
 				98CA1BA4206388D70080BF9C /* DetailViewModel.swift in Sources */,
+				9829A760206F68EC001D9B20 /* Node.swift in Sources */,
+				9829A770206F68F4001D9B20 /* HTMLTreeBuilder.swift in Sources */,
 				98C43F7620624C3100FC1A57 /* AppDelegate.swift in Sources */,
+				9829A771206F68F4001D9B20 /* Attribute.swift in Sources */,
 				98C43FE5206257BC00FC1A57 /* MainTableCell.swift in Sources */,
 				984110B42068D51D0046E706 /* ReplyViewCell.swift in Sources */,
+				9829A76C206F68F4001D9B20 /* HTMLTokenizer.swift in Sources */,
 				98C43FE72062585800FC1A57 /* MainTableViewModel.swift in Sources */,
 				98C43FE92062587B00FC1A57 /* MainTableModel.swift in Sources */,
 			);
@@ -608,10 +682,7 @@
 				DEVELOPMENT_TEAM = 5G97LTLJUY;
 				INFOPLIST_FILE = iOSnier/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -628,10 +699,7 @@
 				DEVELOPMENT_TEAM = 5G97LTLJUY;
 				INFOPLIST_FILE = iOSnier/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -646,11 +714,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSnierTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnierTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -666,11 +730,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSnierTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnierTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -685,11 +745,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSnierUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnierUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -704,11 +760,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSnierUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnierUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

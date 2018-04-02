@@ -10,6 +10,9 @@ PODS:
   - Yoga (1.6.0)
   - YogaKit (1.6.0):
     - Yoga (~> 1.6)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - Alamofire
@@ -20,6 +23,7 @@ DEPENDENCIES:
   - RxSwift (~> 4.0)
   - SnapKit (~> 4.0.0)
   - YogaKit
+  - YYKit
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
@@ -31,7 +35,8 @@ SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Yoga: 81670877477311136b1b3f69a6307ce62e1c89cf
   YogaKit: 8fe0ddd21673226c0b6077fc3ad5c8fa6cda722e
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 26403de15a68b575b9be4e06430fd1f640e79134
+PODFILE CHECKSUM: 1488e444d7d555669f244bafd06ab8b614d31a53
 
 COCOAPODS: 1.4.0

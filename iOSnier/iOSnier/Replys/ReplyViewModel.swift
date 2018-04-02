@@ -8,8 +8,8 @@
 
 import Foundation
 import MarkdownView
-class ReplyViewModel:  {
-    var heights : [Float] = [Float]()
-    weak var markDownViews :[MarkdownView] = [MarkdownView]()
+class ReplyViewModel {
+//    var heights : [Float] = [Float]()
+//    weak var markDownViews :[MarkdownView] = [MarkdownView]()
     
 }

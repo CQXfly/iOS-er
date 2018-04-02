@@ -14,12 +14,21 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var mdHeight: NSLayoutConstraint!
     
+    lazy var mdView:MarkDownView = {
+        let v = MarkDownView()
+        v.completionRender = { [unowned self ] height in
+            self.mdView.snp.updateConstraints{
+                $0.height.equalTo(height)
+            }
+        }
+        return v
+    }()
+    
     lazy var replyScrollerView:UIScrollView = {
         let v = UIScrollView()
         return v
     }()
     
-    @IBOutlet weak var markdownView: MarkdownView!
     var viewModel:DetailViewModel!
     var postID:Int = 0 {
         didSet{
@@ -35,12 +44,21 @@ class DetailViewController: UIViewController {
         viewModel.getDetailArtical()
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.white
-        bindUI()
-        markdownView.isScrollEnabled = false
-        markdownView.onRendered = { [weak self] height in
-            self?.mdHeight.constant = height
-            self?.view.setNeedsLayout()
+        self.view.addSubview(replyScrollerView)
+        self.replyScrollerView.addSubview(mdView)
+        mdView.snp.makeConstraints{
+            $0.top.equalTo(0)
+            $0.leading.equalTo(0)
+            $0.width.equalTo(self.view.snp.width)
+            $0.trailing.equalTo(0)
+            $0.height.equalTo(0)
+            $0.bottom.equalToSuperview()
         }
+        replyScrollerView.snp.makeConstraints{
+            $0.edges.equalTo(UIEdgeInsetsMake(100, 0, 0, 0))
+        }
+        bindUI()
+
     }
     
     private func bindUI(){
@@ -49,9 +67,12 @@ class DetailViewController: UIViewController {
             
             let tmp = cook?.addHttps()
             
-            self.markdownView.load(markdown:tmp)
+//            self.markdownView.load(markdown:tmp)
             
-//            self.relpyViewChange()
+            
+            self.mdView.url = cook!
+            
+            
         }
     }
     

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5C10667AC95F467E931A4FB591151CED"
+               BlueprintIdentifier = "5871C7867B4F1125F467E270AEB8654E"
                BlueprintName = "QXKit"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "QXKit.framework">

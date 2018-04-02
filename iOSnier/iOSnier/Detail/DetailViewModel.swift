@@ -9,6 +9,9 @@
 import Foundation
 import RxSwift
 import RxCocoa
+
+//http://iosre.com/t/11433/5.json?track_visit=true&forceLoad=true&_=1522480495738
+
 class DetailViewModel {
     var data = BehaviorRelay(value: [Post]())
     private var url : String!

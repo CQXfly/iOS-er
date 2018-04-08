@@ -9,7 +9,16 @@
 import Foundation
 import MarkdownView
 class ReplyViewModel {
-//    var heights : [Float] = [Float]()
-//    weak var markDownViews :[MarkdownView] = [MarkdownView]()
     
+    var stream:[Int] = []
+    var cooks:[Post] = [] {
+        didSet {
+            self.viewmodels = self.cooks.map({ (post) -> ReplyCellViewModel in
+                return ReplyCellViewModel(model: post)
+            })
+
+        }
+    }
+    
+    var viewmodels:[ReplyCellViewModel] = []
 }

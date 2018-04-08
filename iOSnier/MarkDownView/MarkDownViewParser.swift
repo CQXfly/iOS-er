@@ -21,6 +21,39 @@ enum MarkDownViewParserType {
     case Code(text:String)
     case Strong(text:String)
     case Aside(parser:[MarkDownViewParserType])
+    case Blockquote(text:String)
+    
+    func getText() -> String {
+        switch self {
+        case  .P(text: let text ):
+            return text
+            
+        case .Img( let src,  _,  _):
+            return src
+        case .Emoji(let src ):
+            return src
+        case .Text(let text):
+            return text
+        case .A(let text,_):
+            return text
+        case .H1(let text):
+            return text
+        case .H2(let text):
+            return text
+        case .Br(let text):
+            return text
+        case .Li(let text):
+            return text
+        case .Code(let text):
+            return text
+        case .Strong(text: let text):
+            return  text
+        case .Aside(_):
+            return "this is aside"
+        case .Blockquote(let text):
+            return text
+        }
+    }
     
     func getFont(type:MarkDownViewParserType) -> UIFont {
         switch type {
@@ -48,6 +81,8 @@ enum MarkDownViewParserType {
         case .Strong(text: _):
             return UIFont.systemFont(ofSize: 16)
         case .Aside(_):
+            return UIFont.systemFont(ofSize: 16)
+        case .Blockquote(_):
             return UIFont.systemFont(ofSize: 16)
         }
     }
@@ -106,9 +141,9 @@ struct MarkDownParser {
                     
                 }else {
                     if(isAside){
-                        asides.append(.Img(src: src!, width: CGFloat(dom.attributeDic["width"]!), height: CGFloat(dom.attributeDic["height"]!)))
+                        asides.append(.Img(src: src!, width: CGFloat(dom.attributeDic["width"] ?? "20"), height: CGFloat(dom.attributeDic["height"] ?? "20")))
                     } else {
-                       results.append(.Img(src: src!, width: CGFloat(dom.attributeDic["width"]!), height: CGFloat(dom.attributeDic["height"]!)))
+                       results.append(.Img(src: src!, width: CGFloat(dom.attributeDic["width"] ?? "20"), height: CGFloat(dom.attributeDic["height"] ?? "20")))
                     }
                     
                 }
@@ -226,9 +261,23 @@ struct MarkDownParser {
                     
                 }
                 
+                if lastDom.data == "blockquote" {
+                    if isAside {
+                        asides.append(.Blockquote(text: dom.data.htmlencode()))
+                    }
+                }
+                
                 if(lastDom.data == "div"){
 //                    results.append(.Text(text: dom.data))
                     
+                }
+                
+                if(lastDom.data == "img" && dom.type == .Char) {
+                    if isAside {
+                        asides.append(.Text(text: dom.data.htmlencode()))
+                    } else {
+                        results.append(.Text(text: dom.data.htmlencode()))
+                    }
                 }
                 
                 lastDom = dom

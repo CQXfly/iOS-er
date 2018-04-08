@@ -1,23 +1,11 @@
-cell 卡片式
-=====================
-[头像] [name]
-[ 标题标题标题标题标题标题
-标题标题标题标题标题标题标]
-[创建于。。。]    [最后更新于..]
-[回复数 ]
-=====================
 
-文章标题 跑马灯效果
 
-收藏
+<aside class="onebox whitelistedgeneric"> <header class="source"> <a href="http://www.iosre.com/t/tweak/1231" rel="nofollow noopener">iosre.com</a> </header> <article class="onebox-body"> <img src="//bbs.iosre.com/uploads/default/603/3bbf17794a09def0.png" width="106" height="106" class="thumbnail"> <h3><a href="http://www.iosre.com/t/tweak/1231" rel="nofollow noopener">使用tweak编写一个插件在运行后截图,为什么这个保存出来是黑屏的图呢</a></h3> <p>//这里因为我需要全屏接图所以直接改了，宏定义iPadWithd为1024，iPadHeight为768， // UIGraphicsBeginImageContextWithOptions(CGSizeMake(640, 960), YES, 0); //设置截屏大小 UIGraphicsBeginImageContextWithOptions(CGSizeMake(iPadWidth, iPadHeight), YES, 0); //设置截屏大小 ...</p> </article> <div class="onebox-metadata"> </div> <div style="clear: both"></div>
+</aside>
 
-更新 url >- _=12312414 截取 不需要
 
-基于WCDB
 
-更新策略
 
-先从数据库中读取 然后网络更新刷新 如果数据库跟网络一致 则不刷新。如果不一致 则刷新。 (默认数据库快)
-
+<aside class="quote"> <div class="title"> <img alt="" width="20" height="20" src="/letter_avatar_proxy/v2/letter/0/c6cbf5/40.png" class="avatar"> <a href="http://bbs.iosre.com/t/ios/642?source_topic_id=6603">iOS中正确的截屏姿势</a> <a class="badge-wrapper bullet" href="/c/essence-sharing"><span class="badge-category-bg" style="background-color: #3AB54A;"></span><span style="color: #FFFFFF;" class="badge-category clear-badge" title="Supreme contents! For us, by us">Essence Sharing | 干货分享</span></a> </div> <blockquote> 依旧是从博客搬运过来的，<a href="http://blog.0xbbc.com/2014/12/ios%E4%B8%AD%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%88%AA%E5%B1%8F%E5%A7%BF%E5%8A%BF/" rel="nofollow noopener">博客原文</a>。 论坛这边因为没开放HTML标签，所以会失去代码高亮。 如果更习惯看有高亮的代码的话（比如我），也可以直接去看<a href="http://blog.0xbbc.com/2014/12/ios%E4%B8%AD%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%88%AA%E5%B1%8F%E5%A7%BF%E5%8A%BF/" rel="nofollow noopener">博客原文</a>。 如果有其他方法，欢迎补充～ [list] *]第一种 这是iOS 3时代开始就被使用的方法，它被废止于iOS 7。iOS的私有方法，效率很高。#import extern "C" CGImageRef UIGetScreenImage(); UIImage * screenshot(void) NS_DEPRECATED_IOS(3_0,7_0); UIImage * screenshot(){ UIImage *image = [UIImage imageWithCGImage:UIGetScreenImage()]; return image; }[list] *]第二种 [/list]这是在比较常见的截图方法，不过不支持Retina屏幕。UIImage * screenshot(UIView *); UIImage * screenshot(UIView *view){ UIGraphicsBeg… </blockquote> </aside>
 
 

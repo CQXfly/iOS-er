@@ -14,7 +14,7 @@ struct DetailModel:Codable {
 
 struct Post_stream : Codable {
     var posts:[Post]
-//    var stream:[Int]
+    var stream:[Int]?
 }
 
 struct Post: Codable {
@@ -48,3 +48,23 @@ struct Post: Codable {
     var can_recover:Bool
     var can_wiki:Bool
 }
+
+//link_counts: [],
+//read: true,
+//user_title: null,
+//actions_summary: [],
+//moderator: true,
+//admin: false,
+//staff: true,
+//user_id: 2518,
+//hidden: false,
+//hidden_reason_id: null,
+//trust_level: 3,
+//deleted_at: null,
+//user_deleted: false,
+//edit_reason: null,
+//can_view_edit_history: false,
+//wiki: false,
+//can_accept_answer: false,
+//can_unaccept_answer: false,
+//accepted_answer: false

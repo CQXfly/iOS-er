@@ -44,7 +44,10 @@ extension SFHandoffSafariViewController: SFSafariViewControllerDelegate {
 
 class DetailViewController: UIViewController {
     
+    @IBOutlet weak var replyBtn: UIButton!
     @IBOutlet weak var mdHeight: NSLayoutConstraint!
+    
+    var replys:[Post]?
     
     lazy var mdView:MarkDownView = {
         let v = MarkDownView()
@@ -75,6 +78,8 @@ class DetailViewController: UIViewController {
         return v
     }()
     
+    
+    
     var viewModel:DetailViewModel!
     var postID:Int = 0 {
         didSet{
@@ -90,6 +95,7 @@ class DetailViewController: UIViewController {
         viewModel.getDetailArtical()
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.white
+        self.replyBtn.isEnabled = false
         self.view.addSubview(replyScrollerView)
         self.replyScrollerView.addSubview(mdView)
         mdView.snp.makeConstraints{
@@ -101,15 +107,34 @@ class DetailViewController: UIViewController {
             $0.bottom.equalToSuperview()
         }
         replyScrollerView.snp.makeConstraints{
-            $0.edges.equalTo(UIEdgeInsetsMake(100, 0, 0, 0))
+            if #available(iOS 11.0, *) {
+                $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+            } else {
+                // Fallback on earlier versions
+            }
+            $0.leading.equalTo(0)
+            $0.trailing.equalTo(0)
+            $0.bottom.equalTo(self.replyBtn.snp.top)
         }
         bindUI()
 
     }
     
+    @IBAction func replyBtnTap(_ sender: UIButton) {
+        
+        
+        let sb = UIStoryboard.init(name: "Replys", bundle: Bundle.main)
+        let vc = sb.instantiateViewController(withIdentifier: "ReplyViewController") as! ReplyViewController
+        
+        vc.posts = self.replys;
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     private func bindUI(){
         viewModel.data.asObservable().skip(1).subscribe { (posts) in
             let cook = posts.event.element?.first?.cooked
+            
+            self.replys = Array(posts.event.element!.dropFirst())
             
             let tmp = cook?.addHttps()
             
@@ -117,7 +142,7 @@ class DetailViewController: UIViewController {
             
             
             self.mdView.url = cook!
-            
+            self.replyBtn.isEnabled = true
             
         }
     }

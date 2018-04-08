@@ -41,7 +41,7 @@ public class MainTableViewModel {
         return users.filter { (user) -> Bool in
             return user.id == userID
             }.map({ ( user) in
-                let avatar = user.avatar_template.replacingOccurrences(of: "{size}", with: "6464")
+                let avatar = user.avatar_template.replacingOccurrences(of: "{size}", with: "64")
                 let user1 = User(id: user.id, username: user.username, avatar_template: "http://7xibfi.com1.z0.glb.clouddn.com/"+avatar)
                 return user1
             }).first

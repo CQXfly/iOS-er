@@ -114,9 +114,31 @@
                     <view key="view" contentMode="scaleToFill" id="F7r-wT-rWK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TY-kr-zmY">
+                                <rect key="frame" x="0.0" y="734" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="KIL-Ud-OhO"/>
+                                </constraints>
+                                <state key="normal" title="全部回复">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="replyBtnTap:" destination="HdL-Es-tmU" eventType="touchUpInside" id="BeQ-WJ-MfS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3TY-kr-zmY" firstAttribute="leading" secondItem="wmq-Wb-wYt" secondAttribute="leading" id="Iut-Uz-PcA"/>
+                            <constraint firstItem="wmq-Wb-wYt" firstAttribute="bottom" secondItem="3TY-kr-zmY" secondAttribute="bottom" id="RIk-pr-Ntk"/>
+                            <constraint firstItem="wmq-Wb-wYt" firstAttribute="trailing" secondItem="3TY-kr-zmY" secondAttribute="trailing" id="dDn-8l-NZK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wmq-Wb-wYt"/>
                     </view>
+                    <connections>
+                        <outlet property="replyBtn" destination="3TY-kr-zmY" id="eJo-Jz-Ro6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bk5-tQ-gn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,7 +147,7 @@
         <!--咨询-->
         <scene sceneID="dpe-u7-oLf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u1x-zw-faA" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u1x-zw-faA" customClass="BaseNavigationController" customModule="iOSnier" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="咨询" id="kf2-zR-GSh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eLt-fJ-6kU">

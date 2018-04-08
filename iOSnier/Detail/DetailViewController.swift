@@ -134,7 +134,9 @@ class DetailViewController: UIViewController {
         viewModel.data.asObservable().skip(1).subscribe { (posts) in
             let cook = posts.event.element?.first?.cooked
             
-            self.replys = Array(posts.event.element!.dropFirst())
+            self.replys = Array(posts.event.element!.dropFirst()).filter{
+                return $0.cooked != ""
+            }
             
             let tmp = cook?.addHttps()
             

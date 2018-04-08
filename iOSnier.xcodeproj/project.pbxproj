@@ -25,6 +25,7 @@
 		984110B22068CB8B0046E706 /* Replys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984110B12068CB8A0046E706 /* Replys.storyboard */; };
 		984110B42068D51D0046E706 /* ReplyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984110B32068D51C0046E706 /* ReplyViewCell.swift */; };
 		984110B62068D5380046E706 /* ReplyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984110B52068D5380046E706 /* ReplyViewModel.swift */; };
+		98A42D13207A056A00C26F19 /* gu.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98A42D12207A056A00C26F19 /* gu.otf */; };
 		98C43F7620624C3100FC1A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C43F7520624C3100FC1A57 /* AppDelegate.swift */; };
 		98C43F7820624C3100FC1A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C43F7720624C3100FC1A57 /* ViewController.swift */; };
 		98C43F7B20624C3100FC1A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C43F7920624C3100FC1A57 /* Main.storyboard */; };
@@ -83,6 +84,7 @@
 		984110B12068CB8A0046E706 /* Replys.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Replys.storyboard; sourceTree = "<group>"; };
 		984110B32068D51C0046E706 /* ReplyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewCell.swift; sourceTree = "<group>"; };
 		984110B52068D5380046E706 /* ReplyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewModel.swift; sourceTree = "<group>"; };
+		98A42D12207A056A00C26F19 /* gu.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gu.otf; sourceTree = "<group>"; };
 		98C43F7220624C3100FC1A57 /* iOSnier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSnier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C43F7520624C3100FC1A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98C43F7720624C3100FC1A57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 		98C43F7420624C3100FC1A57 /* iOSnier */ = {
 			isa = PBXGroup;
 			children = (
+				98A42D12207A056A00C26F19 /* gu.otf */,
 				98EB1AD12074C058008C82D2 /* Base */,
 				9829A750206F68D4001D9B20 /* MarkDownView */,
 				984110AF2068CB660046E706 /* Replys */,
@@ -398,6 +401,7 @@
 			files = (
 				984110AE20652D970046E706 /* 设计想法 in Resources */,
 				98C43F8020624C3200FC1A57 /* LaunchScreen.storyboard in Resources */,
+				98A42D13207A056A00C26F19 /* gu.otf in Resources */,
 				98C43F7D20624C3200FC1A57 /* Assets.xcassets in Resources */,
 				98C43F7B20624C3100FC1A57 /* Main.storyboard in Resources */,
 				984110AA206507010046E706 /* Collect.storyboard in Resources */,

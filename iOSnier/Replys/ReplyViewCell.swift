@@ -14,7 +14,15 @@ class ReplyViewCell: UITableViewCell {
     var vm: ReplyCellViewModel? {
         didSet {
             contentView.removeAllSubviews()
+            setupUI()
             contentView.addSubview(vm!.markDownV)
+            
+            self.avatar.kf.setImage(with: URL(string: vm!.avatar), placeholder: nil, options: [], progressBlock: nil) { (a, b, c, d) in
+                self.avatar.image = a
+            }
+            
+            self.usernameLabel.text = vm!.username
+            
             vm!.markDownV.linkTapHandler = { [unowned self] link in
                 
                 let l = link.hasSuffix(".dylib") || link.hasSuffix(".ipa") || link.hasSuffix(".zip") ||
@@ -37,23 +45,61 @@ class ReplyViewCell: UITableViewCell {
     var markdown: MarkDownView? {
         didSet {
             markdown?.snp.makeConstraints{
-                $0.edges.equalTo(0)
+                $0.bottom.equalTo(self.line.snp.top)
+                $0.leading.equalToSuperview()
+                $0.trailing.equalToSuperview()
+                $0.top.equalTo(self.avatar.snp.bottom).offset(8)
             }
         }
     }
     
+    var avatar:UIImageView
+    
+    var usernameLabel : UILabel
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        self.avatar = UIImageView()
+        self.usernameLabel = UILabel()
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        
+    }
+    
+    private func setupUI(){
+        self.avatar = UIImageView()
+        self.usernameLabel = UILabel()
+        self.line.backgroundColor = UIColor.gray
+        contentView.addSubview(self.line)
         self.line.snp.makeConstraints{
             $0.height.equalTo(1)
             $0.bottom.equalTo(self.contentView.snp.bottom)
             $0.leading.equalTo(0)
             $0.trailing.equalTo(0)
         }
+        
+        
+        contentView.addSubview(self.avatar)
+        self.avatar.snp.makeConstraints{
+            $0.leading.equalTo(8)
+            $0.top.equalTo(8)
+            $0.width.equalTo(32)
+            $0.height.equalTo(32)
+        }
+        
+        
+        contentView.addSubview(self.usernameLabel)
+        self.usernameLabel.font = UIFont.systemFont(ofSize: 16)
+        self.usernameLabel.snp.makeConstraints{
+            $0.leading.equalTo(self.avatar.snp.trailing).offset(8)
+            $0.top.equalTo(self.avatar)
+            $0.trailing.equalToSuperview().offset(-8)
+            $0.height.equalTo(self.avatar.snp.height)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
+        self.avatar = UIImageView()
+        self.usernameLabel = UILabel()
         super.init(coder: aDecoder)
 //        fatalError("init(coder:) has not been implemented")
     }

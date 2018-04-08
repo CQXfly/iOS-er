@@ -337,7 +337,7 @@ class MarkDownView: UIView {
         let tmp = "•  " + li
         let attr = NSMutableAttributedString(string: tmp)
         var at = defaultAttribute()
-        at[NSAttributedStringKey.font] = UIFont.boldSystemFont(ofSize: 16)
+        at[NSAttributedStringKey.font] = UIFont(name: "Wyue-GutiFangsong-NC", size: 16) ?? UIFont.systemFont(ofSize: 16)
         attr.addAttributes(at, range: NSMakeRange(0, tmp.count))
         return createLabelView(attribute: attr, lastV: &lastV, append: false)
     }
@@ -359,7 +359,7 @@ class MarkDownView: UIView {
     private func createH1Label(p:String,lastV:inout UIView)->YYLabel{
         let attr = NSMutableAttributedString(string: p)
         var at = defaultAttribute()
-        at[NSAttributedStringKey.font] = UIFont.boldSystemFont(ofSize: 22)
+        at[NSAttributedStringKey.font] = UIFont.boldSystemFont(ofSize: 24)
         attr.addAttributes(at, range: NSMakeRange(0, p.count))
         return createLabelView(attribute: attr, lastV: &lastV, append: false)
     }
@@ -475,7 +475,8 @@ class MarkDownView: UIView {
     private func defaultAttribute()-> [NSAttributedStringKey:Any] {
         let paragraph = NSMutableParagraphStyle()
         paragraph.lineSpacing = 6
-        return [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 15),
+        
+        return [NSAttributedStringKey.font : UIFont(name: "Wyue-GutiFangsong-NC", size: 16) ?? UIFont.systemFont(ofSize: 16),
                 NSAttributedStringKey.foregroundColor:
             UIColor.black,
                 NSAttributedStringKey.paragraphStyle:
@@ -671,7 +672,7 @@ class MarkDownAsideView : UIView {
     @discardableResult
     func createLabel(dom : String) -> UILabel {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = UIFont(name: "Wyue-GutiFangsong-NC", size: 16) ?? UIFont.systemFont(ofSize: 16)
         label.text = dom
         addSubview(label)
         label.snp.makeConstraints{

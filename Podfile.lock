@@ -1,11 +1,12 @@
 PODS:
   - Alamofire (4.7.0)
   - Kingfisher (4.6.4)
-  - MarkdownView (1.1.0)
+  - MJRefresh (3.1.15.3)
   - QXKit (0.1.02)
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
+  - SKPhotoBrowser (5.0.6)
   - SnapKit (4.0.0)
   - Yoga (1.6.0)
   - YogaKit (1.6.0):
@@ -17,10 +18,11 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Kingfisher
-  - MarkdownView
+  - MJRefresh
   - QXKit
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
+  - SKPhotoBrowser
   - SnapKit (~> 4.0.0)
   - YogaKit
   - YYKit
@@ -28,15 +30,16 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
-  MarkdownView: 80db8e9a27a6c6cc22615e644e3e85c06065bab7
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   QXKit: 83045e6ebfae5bbc915b8e61e3689da2c2bef2a4
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SKPhotoBrowser: 84235d73342a0f561d6b52ad9a9e09a8f10689d6
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Yoga: 81670877477311136b1b3f69a6307ce62e1c89cf
   YogaKit: 8fe0ddd21673226c0b6077fc3ad5c8fa6cda722e
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 1488e444d7d555669f244bafd06ab8b614d31a53
+PODFILE CHECKSUM: 1dff37a404538f2f16c7ef2be72485076029ba16
 
 COCOAPODS: 1.4.0

@@ -73,7 +73,8 @@ public class HTTPNetCoreKit {
         }
     }
     
-    public func addHeader(key:String,value:String){
+    public func addHeader(key:String,value:String)->HTTPNetCoreKit{
         headers[key] = value
+        return self
     }
 }

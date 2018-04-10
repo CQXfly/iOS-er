@@ -8,7 +8,7 @@
 
 import Foundation
 struct MainTableModel:Codable {
-    var users : [User]
+    var users : [User]?
 //    var age : String
 //    var date : String
     var topic_list:Topic_list
@@ -24,7 +24,7 @@ struct User:Codable {
 struct Topic_list: Codable {
     
     var can_create_topic:Bool
-    var more_topics_url: String
+    var more_topics_url: String?
     var draft: String?
     
     var draft_key:String
@@ -48,7 +48,7 @@ struct Topic:Codable {
     var image_url:String?
     
     var created_at:String
-    var last_posted_at:String
+    var last_posted_at:String?
     var bumped:Bool
     var bumped_at:String
     var unseen:Bool

@@ -6,8 +6,10 @@ target 'iOSnier' do
     pod 'SnapKit', '~> 4.0.0'
     pod 'Kingfisher'
     pod 'YogaKit'
-    pod 'MarkdownView'
     pod 'QXKit'
     pod 'YYKit'
+    pod 'SKPhotoBrowser'
+#    pod 'PullToRefreshKit' , git: 'https://github.com/Joe0708/PullToRefreshKit.git'
+    pod 'MJRefresh'
 #    pod 'WCDB.swift'
 end

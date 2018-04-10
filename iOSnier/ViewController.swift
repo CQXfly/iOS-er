@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import QXKit
+import MJRefresh
 class ViewController: UIViewController {
     
     @IBOutlet var tableview: UITableView!
@@ -19,8 +20,35 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 //        tableview.register(MainTableCell.classForCoder(), forCellReuseIdentifier: "MaintableCell")
         
-        viewModel.fetchData()
+        viewModel.fetchData{
+            
+        }
         
+        
+        let header = MJRefreshNormalHeader(refreshingBlock: { [weak self] in
+            self?.tableview.mj_header.beginRefreshing()
+            self?.viewModel.fetchData{[weak self] in
+                self?.tableview.mj_header.endRefreshing()
+            }
+        })
+        
+        tableview.mj_header = header
+        
+        
+        let footer = MJRefreshBackFooter(refreshingBlock: { [weak self] in
+            
+            print("1231")
+            self?.tableview.mj_footer.beginRefreshing()
+            self?.viewModel.fetchMoreData { [weak self] in
+                self?.tableview.mj_footer.endRefreshing()
+            }
+        })
+
+        tableview.mj_footer = footer
+//
+//        tableview.configRefreshFooter(with: ElasticRefreshControl()) {
+//            print("refresh ")
+//        }
         
         bindUI()
     }

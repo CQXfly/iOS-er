@@ -12,6 +12,7 @@ import QXKit
 public class MainTableViewModel {
     var topics : Variable<[Topic]>
     var users : [User]
+    private var page:Int = 1
     public init() {
         topics = Variable([])
         users = [User]()
@@ -21,15 +22,31 @@ public class MainTableViewModel {
     
 //    http://iosre.com/latest?exclude_category_ids%5B%5D=12&no_definitions=true&no_subcategories=false&page=1&slow_platform=20&_=1522480495737  
     /// getdatafromServer
-    func fetchData() {
+    func fetchData(handler:@escaping Action) {
         let url = "http://iosre.com/latest.json?order=default&_=\(Date.currentTimeStamp(.Long))"
         print(url)
         HTTPNetCoreKit.sharedInstance.get(url: url, success: { (movie:MainTableModel) in
             self.topics.value = movie.topic_list.topics
-            self.users = movie.users
+            self.users = movie.users ?? []
+            handler()
         }) { (e) in
-        
+            handler()
         }
+    }
+    
+    func fetchMoreData(handler:@escaping Action){
+        let url = "http://iosre.com/latest?exclude_category_ids%5B%5D=12&no_definitions=true&no_subcategories=false&page=\(page)&slow_platform=20&_=\(Date.currentTimeStamp(.Long))"
+        print(url)
+        handler()
+        HTTPNetCoreKit.sharedInstance.addHeader(key: "Accept", value: "application/json").get(url: url, success: { (movie:MainTableModel) in
+            self.topics.value.append(contentsOf:movie.topic_list.topics)
+            self.users.append(contentsOf: movie.users ?? [])
+            self.page += 1
+            handler()
+        }) { (e) in
+            handler()
+        }
+        
     }
     
     /// getUserInfo

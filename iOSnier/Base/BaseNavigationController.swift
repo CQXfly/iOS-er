@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+typealias Action = ()->Void
 class BaseNavigationController: UINavigationController {
 
     override func viewDidLoad() {

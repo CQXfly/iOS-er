@@ -26,6 +26,8 @@
 		984110B42068D51D0046E706 /* ReplyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984110B32068D51C0046E706 /* ReplyViewCell.swift */; };
 		984110B62068D5380046E706 /* ReplyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984110B52068D5380046E706 /* ReplyViewModel.swift */; };
 		98A42D13207A056A00C26F19 /* gu.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98A42D12207A056A00C26F19 /* gu.otf */; };
+		98A42D15207B075700C26F19 /* UIScrollView+Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A42D14207B075700C26F19 /* UIScrollView+Refresh.swift */; };
+		98A42D17207B2EDC00C26F19 /* VFooterRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A42D16207B2EDC00C26F19 /* VFooterRefresh.swift */; };
 		98C43F7620624C3100FC1A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C43F7520624C3100FC1A57 /* AppDelegate.swift */; };
 		98C43F7820624C3100FC1A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C43F7720624C3100FC1A57 /* ViewController.swift */; };
 		98C43F7B20624C3100FC1A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C43F7920624C3100FC1A57 /* Main.storyboard */; };
@@ -85,6 +87,8 @@
 		984110B32068D51C0046E706 /* ReplyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewCell.swift; sourceTree = "<group>"; };
 		984110B52068D5380046E706 /* ReplyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewModel.swift; sourceTree = "<group>"; };
 		98A42D12207A056A00C26F19 /* gu.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gu.otf; sourceTree = "<group>"; };
+		98A42D14207B075700C26F19 /* UIScrollView+Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Refresh.swift"; sourceTree = "<group>"; };
+		98A42D16207B2EDC00C26F19 /* VFooterRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFooterRefresh.swift; sourceTree = "<group>"; };
 		98C43F7220624C3100FC1A57 /* iOSnier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSnier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C43F7520624C3100FC1A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98C43F7720624C3100FC1A57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -287,6 +291,8 @@
 		98EB1AD12074C058008C82D2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				98A42D16207B2EDC00C26F19 /* VFooterRefresh.swift */,
+				98A42D14207B075700C26F19 /* UIScrollView+Refresh.swift */,
 				98EB1AD22074C074008C82D2 /* BaseNavigationController.swift */,
 			);
 			path = Base;
@@ -453,10 +459,11 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSnier/Pods-iOSnier-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/MarkdownView/MarkdownView.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/QXKit/QXKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
@@ -466,10 +473,11 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarkdownView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QXKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
@@ -505,6 +513,7 @@
 				9829A76D206F68F4001D9B20 /* Element.swift in Sources */,
 				9829A76E206F68F4001D9B20 /* HTMLToken.swift in Sources */,
 				9829A775206F693D001D9B20 /* MarkDownViewParser.swift in Sources */,
+				98A42D17207B2EDC00C26F19 /* VFooterRefresh.swift in Sources */,
 				98EB1AD02074BEE0008C82D2 /* ReplyViewController.swift in Sources */,
 				98CA1BA820638FEB0080BF9C /* DetailViewController.swift in Sources */,
 				984110AC20650BD00046E706 /* DateFile.swift in Sources */,
@@ -525,6 +534,7 @@
 				98C43FE5206257BC00FC1A57 /* MainTableCell.swift in Sources */,
 				98EB1ACE2074BA7B008C82D2 /* ReplyCellViewModel.swift in Sources */,
 				984110B42068D51D0046E706 /* ReplyViewCell.swift in Sources */,
+				98A42D15207B075700C26F19 /* UIScrollView+Refresh.swift in Sources */,
 				98EB1AD32074C074008C82D2 /* BaseNavigationController.swift in Sources */,
 				9829A76C206F68F4001D9B20 /* HTMLTokenizer.swift in Sources */,
 				98C43FE72062585800FC1A57 /* MainTableViewModel.swift in Sources */,
@@ -706,10 +716,7 @@
 				DEVELOPMENT_TEAM = 5G97LTLJUY;
 				INFOPLIST_FILE = iOSnier/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -726,10 +733,7 @@
 				DEVELOPMENT_TEAM = 5G97LTLJUY;
 				INFOPLIST_FILE = iOSnier/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -744,11 +748,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSnierTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnierTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -764,11 +764,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSnierTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnierTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -783,11 +779,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSnierUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnierUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -802,11 +794,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSnierUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnierUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

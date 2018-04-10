@@ -44,7 +44,7 @@ class MainTableCell : UITableViewCell {
             createTimeLabel.text = "发布于" + topic!.created_at.transformBTDateString().getDateDescription1(type: .None)
             
             postCountLabel.text = String(topic!.posts_count)
-            lastPostLabel.text = "最后更新于" + topic!.last_posted_at.transformBTDateString().getDateDescription1(type: .None)
+            lastPostLabel.text = "最后更新于" + (topic!.last_posted_at ?? "").transformBTDateString().getDateDescription1(type: .None)  
             replyCountLabel.text = String(topic!.reply_count)
             
             

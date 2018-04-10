@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MarkdownView
 import QXKit
 import SafariServices
 

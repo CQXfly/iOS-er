@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSnier/MarkDownView/MarkDownView.swift"
-            timestampString = "544949046.3082089"
+            timestampString = "547442653.545588"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
@@ -26,60 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSnier/Replys/ReplyViewCell.swift"
-            timestampString = "544949046.308643"
+            timestampString = "547442653.552057"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
             endingLineNumber = "65"
             landmarkName = "init(style:reuseIdentifier:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSnier/MarkDownView/MarkDownView.swift"
-            timestampString = "544949046.309006"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "501"
-            endingLineNumber = "501"
-            landmarkName = "init(type:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSnier/MarkDownView/MarkDownView.swift"
-            timestampString = "544949046.3090841"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298"
-            landmarkName = "createCode(code:lastV:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSnier/MarkDownView/MarkDownView.swift"
-            timestampString = "544949046.3091511"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "318"
-            endingLineNumber = "318"
-            landmarkName = "createCode(code:lastV:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -121,13 +73,39 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSnier/ViewController.swift"
-            timestampString = "544949046.3095731"
+            filePath = "iOSnier/Replys/ReplyViewCell.swift"
+            timestampString = "547442653.554029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "bindUI()"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "vm"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSnier/MarkDownView/MarkDownView.swift"
+            timestampString = "547442653.55416"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "342"
+            endingLineNumber = "342"
+            landmarkName = "createCode(code:lastV:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -137,14 +115,78 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSnier/Replys/ReplyViewCell.swift"
-            timestampString = "544949370.847297"
+            filePath = "iOSnier/MarkDownView/MarkDownView.swift"
+            timestampString = "547442653.554617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "vm"
-            landmarkType = "24">
+            startingLineNumber = "335"
+            endingLineNumber = "335"
+            landmarkName = "createCode(code:lastV:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSnier/MarkDownView/MarkDownView.swift"
+            timestampString = "548756639.078897"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "463"
+            endingLineNumber = "463"
+            landmarkName = "createImageView(text:width:height:lastV:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSnier.MarkDownView.(createImageView in _EC3CB99C2C49466A228391F76E5EDA80)(text: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, lastV: inout __ObjC.UIView) -&gt; __ObjC.UIImageView"
+                  moduleName = "iOSnier"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ytx/project/iOS-er/iOSnier/MarkDownView/MarkDownView.swift"
+                  timestampString = "548756639.093179"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "463"
+                  endingLineNumber = "463"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.UIImage&gt;, Swift.Optional&lt;__ObjC.NSError&gt;, Kingfisher.CacheType, Swift.Optional&lt;Foundation.URL&gt;) -&gt; () in iOSnier.MarkDownView.(createImageView in _EC3CB99C2C49466A228391F76E5EDA80)(text: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, lastV: inout __ObjC.UIView) -&gt; __ObjC.UIImageView"
+                  moduleName = "iOSnier"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ytx/project/iOS-er/iOSnier/MarkDownView/MarkDownView.swift"
+                  timestampString = "548756639.096724"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "465"
+                  endingLineNumber = "465"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSnier/MarkDownView/MarkDownViewParser.swift"
+            timestampString = "548756817.476599"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "parser()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

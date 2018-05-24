@@ -19,7 +19,7 @@ struct Post_stream : Codable {
 
 struct Post: Codable {
     var id : Int
-    var name:String 
+    var name:String?
     var username:String
     var avatar_template:String
     var created_at:String
@@ -37,7 +37,7 @@ struct Post: Codable {
     var yours:Bool
     var topic_id:Int
     var topic_slug:String
-    var display_username:String
+    var display_username:String?
     var primary_group_name:String?
     var primary_group_flair_url:String?
     var primary_group_flair_bg_color:String?

@@ -25,6 +25,7 @@
 		984110B22068CB8B0046E706 /* Replys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984110B12068CB8A0046E706 /* Replys.storyboard */; };
 		984110B42068D51D0046E706 /* ReplyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984110B32068D51C0046E706 /* ReplyViewCell.swift */; };
 		984110B62068D5380046E706 /* ReplyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984110B52068D5380046E706 /* ReplyViewModel.swift */; };
+		9857925B20A0462B0017382C /* RJAsyncClosureCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9857925A20A0462B0017382C /* RJAsyncClosureCaller.swift */; };
 		98A42D13207A056A00C26F19 /* gu.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98A42D12207A056A00C26F19 /* gu.otf */; };
 		98A42D15207B075700C26F19 /* UIScrollView+Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A42D14207B075700C26F19 /* UIScrollView+Refresh.swift */; };
 		98A42D17207B2EDC00C26F19 /* VFooterRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A42D16207B2EDC00C26F19 /* VFooterRefresh.swift */; };
@@ -42,6 +43,7 @@
 		98CA1BA4206388D70080BF9C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA1BA3206388D70080BF9C /* DetailViewModel.swift */; };
 		98CA1BA6206388F00080BF9C /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA1BA5206388F00080BF9C /* DetailModel.swift */; };
 		98CA1BA820638FEB0080BF9C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA1BA720638FEB0080BF9C /* DetailViewController.swift */; };
+		98E9ED9620871F6100BD153C /* RJIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E9ED9520871F6100BD153C /* RJIterator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		98EB1ACE2074BA7B008C82D2 /* ReplyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EB1ACD2074BA7B008C82D2 /* ReplyCellViewModel.swift */; };
 		98EB1AD02074BEE0008C82D2 /* ReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EB1ACF2074BEE0008C82D2 /* ReplyViewController.swift */; };
 		98EB1AD32074C074008C82D2 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EB1AD22074C074008C82D2 /* BaseNavigationController.swift */; };
@@ -86,6 +88,7 @@
 		984110B12068CB8A0046E706 /* Replys.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Replys.storyboard; sourceTree = "<group>"; };
 		984110B32068D51C0046E706 /* ReplyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewCell.swift; sourceTree = "<group>"; };
 		984110B52068D5380046E706 /* ReplyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewModel.swift; sourceTree = "<group>"; };
+		9857925A20A0462B0017382C /* RJAsyncClosureCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJAsyncClosureCaller.swift; sourceTree = "<group>"; };
 		98A42D12207A056A00C26F19 /* gu.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gu.otf; sourceTree = "<group>"; };
 		98A42D14207B075700C26F19 /* UIScrollView+Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Refresh.swift"; sourceTree = "<group>"; };
 		98A42D16207B2EDC00C26F19 /* VFooterRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFooterRefresh.swift; sourceTree = "<group>"; };
@@ -109,6 +112,9 @@
 		98CA1BA3206388D70080BF9C /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		98CA1BA5206388F00080BF9C /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
 		98CA1BA720638FEB0080BF9C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		98E9ED9320871F6100BD153C /* iOSnier-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSnier-Bridging-Header.h"; sourceTree = "<group>"; };
+		98E9ED9420871F6100BD153C /* RJIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJIterator.h; sourceTree = "<group>"; };
+		98E9ED9520871F6100BD153C /* RJIterator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJIterator.m; sourceTree = "<group>"; };
 		98EB1ACD2074BA7B008C82D2 /* ReplyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyCellViewModel.swift; sourceTree = "<group>"; };
 		98EB1ACF2074BEE0008C82D2 /* ReplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewController.swift; sourceTree = "<group>"; };
 		98EB1AD22074C074008C82D2 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
@@ -230,6 +236,7 @@
 		98C43F7420624C3100FC1A57 /* iOSnier */ = {
 			isa = PBXGroup;
 			children = (
+				98E9ED9220871F3500BD153C /* RJIterator */,
 				98A42D12207A056A00C26F19 /* gu.otf */,
 				98EB1AD12074C058008C82D2 /* Base */,
 				9829A750206F68D4001D9B20 /* MarkDownView */,
@@ -286,6 +293,17 @@
 				98CA1BA720638FEB0080BF9C /* DetailViewController.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		98E9ED9220871F3500BD153C /* RJIterator */ = {
+			isa = PBXGroup;
+			children = (
+				98E9ED9420871F6100BD153C /* RJIterator.h */,
+				98E9ED9520871F6100BD153C /* RJIterator.m */,
+				98E9ED9320871F6100BD153C /* iOSnier-Bridging-Header.h */,
+				9857925A20A0462B0017382C /* RJAsyncClosureCaller.swift */,
+			);
+			path = RJIterator;
 			sourceTree = "<group>";
 		};
 		98EB1AD12074C058008C82D2 /* Base */ = {
@@ -369,6 +387,7 @@
 				TargetAttributes = {
 					98C43F7120624C3100FC1A57 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					98C43F8520624C3200FC1A57 = {
 						CreatedOnToolsVersion = 9.3;
@@ -521,6 +540,8 @@
 				9829A75E206F68EC001D9B20 /* HTNMultilingualism.swift in Sources */,
 				9829A75D206F68EC001D9B20 /* HTNStateMachine.swift in Sources */,
 				98CA1BA6206388F00080BF9C /* DetailModel.swift in Sources */,
+				9857925B20A0462B0017382C /* RJAsyncClosureCaller.swift in Sources */,
+				98E9ED9620871F6100BD153C /* RJIterator.m in Sources */,
 				9829A75F206F68EC001D9B20 /* StringExtension.swift in Sources */,
 				9829A76F206F68F4001D9B20 /* Document.swift in Sources */,
 				984110B62068D5380046E706 /* ReplyViewModel.swift in Sources */,
@@ -712,13 +733,19 @@
 			baseConfigurationReference = 0686260C92D1792AD05DB46E /* Pods-iOSnier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G97LTLJUY;
 				INFOPLIST_FILE = iOSnier/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSnier/RJIterator/iOSnier-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -729,13 +756,18 @@
 			baseConfigurationReference = 26E6FBE451B80436DCCBCB1D /* Pods-iOSnier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G97LTLJUY;
 				INFOPLIST_FILE = iOSnier/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSnier/RJIterator/iOSnier-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -748,7 +780,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSnierTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnierTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -764,7 +800,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSnierTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnierTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -779,7 +819,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSnierUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnierUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -794,7 +838,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSnierUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qx.iOSnierUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -301,9 +301,9 @@ class MarkDownView: UIView {
                 let lastvv = lastV as! YYLabel
                 let  a = lastvv.attributedText as! NSMutableAttributedString
                 a.append(attr)
-                label = createLabelView(attribute: a, lastV: &lastV, append: true)
+                label = createLabelView(attribute: a, lastV: &lastV, append: true,isCode: true)
             } else {
-                label = createLabelView(attribute: attr, lastV: &lastV, append: false)
+                label = createLabelView(attribute: attr, lastV: &lastV, append: false,isCode: true)
                 
                 label.textContainerInset = UIEdgeInsetsMake(10, 4, 4, 4)
                 
@@ -315,7 +315,7 @@ class MarkDownView: UIView {
             }
             
         } else {
-            label = createLabelView(attribute: attr, lastV: &lastV, append: false)
+            label = createLabelView(attribute: attr, lastV: &lastV, append: false,isCode: true)
             
             label.textContainerInset = UIEdgeInsetsMake(10, 4, 4, 4)
             
@@ -326,7 +326,24 @@ class MarkDownView: UIView {
             mdHeight += 14
         }
         
-        
+//        label.font = UIFont .systemFont(ofSize: 12);
+        if (code.count > 5000) {
+            let w = label.textLayout?.textBoundingSize.width
+            let h = label.textLayout?.textBoundingSize.height
+            let tmpL = UITextView(frame: CGRect(x: 20, y: mdHeight - h! - 14 , width: 343 - 8, height: h!))
+            
+            tmpL.attributedText = label.attributedText
+//            tmpL.numberOfLines = 0
+//            tmpL.snp.makeConstraints{
+//                $0.left.equalTo(label.snp.left).offset(-4);
+//                $0.top.equalTo(label.snp.top).offset(10);
+//                $0.bottom.equalTo(label.snp.bottom).offset(4);
+//                $0.right.equalTo(label.snp.right).offset(-4);
+//            }
+            tmpL.textColor = UIColor.red
+//            tmpL.backgroundColor = UIColor.red
+            self.insertSubview(tmpL, aboveSubview: label)
+        }
         
         return label
     }
@@ -374,7 +391,7 @@ class MarkDownView: UIView {
     }
     
     @discardableResult
-    private func createLabelView(attribute:NSMutableAttributedString,lastV:inout UIView,append:Bool)->YYLabel {
+    private func createLabelView(attribute:NSMutableAttributedString,lastV:inout UIView,append:Bool,isCode:Bool = false)->YYLabel {
         
         var label : YYLabel
         
@@ -384,7 +401,7 @@ class MarkDownView: UIView {
             mdHeight -= (label.textLayout?.textBoundingSize.height)!
             
             label.attributedText = attribute
-            label.textLayout = getTextLayout(text: attribute)
+            label.textLayout = getTextLayout(text: attribute,isCode:isCode)
             
             mdHeight += label.textLayout!.textBoundingSize.height
             
@@ -398,7 +415,7 @@ class MarkDownView: UIView {
             label.tag = lastV.tag + 1
             let textLayout = getTextLayout(text: attribute)
             
-            let height = textLayout.textBoundingSize.height
+            let height = isCode ? textLayout.textBoundingSize.height + 14 :textLayout.textBoundingSize.height
             
             label.attributedText = attribute
             label.textLayout = textLayout
@@ -485,10 +502,12 @@ class MarkDownView: UIView {
             1.5]
     }
     
-    private func getTextLayout(text:NSAttributedString)->YYTextLayout{
+    private func getTextLayout(text:NSAttributedString,isCode:Bool = false)->YYTextLayout{
         
-        return YYTextLayout(containerSize: CGSize(width: 343, height: CGFloat(MAXFLOAT)), text: text)!
+        return YYTextLayout(containerSize: CGSize(width: (isCode ? 335 : 343), height: CGFloat(MAXFLOAT)), text: text)!
     }
+    
+    
 }
 
 class MarkDownAsideView : UIView {

@@ -118,6 +118,7 @@ class DetailViewController: UIViewController {
         bindUI()
 
     }
+
     
     @IBAction func replyBtnTap(_ sender: UIButton) {
         

@@ -16,7 +16,7 @@ class ReplyCellViewModel {
         
         
         if model.name != "" {
-            self.username = model.name
+            self.username = model.name ?? ""
         } else {
             self.username = model.username
         }

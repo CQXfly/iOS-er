@@ -141,9 +141,9 @@ struct MarkDownParser {
                     
                 }else {
                     if(isAside){
-                        asides.append(.Img(src: src!, width: CGFloat(dom.attributeDic["width"] ?? "20"), height: CGFloat(dom.attributeDic["height"] ?? "20")))
+                        asides.append(.Img(src: src!, width: CGFloat(dom.attributeDic["width"] ?? dom.attributeDic["alt width"] ?? "20"), height: CGFloat(dom.attributeDic["height"] ?? dom.attributeDic["alt height"] ?? "20")))
                     } else {
-                       results.append(.Img(src: src!, width: CGFloat(dom.attributeDic["width"] ?? "20"), height: CGFloat(dom.attributeDic["height"] ?? "20")))
+                       results.append(.Img(src: src!, width: CGFloat(dom.attributeDic["width"] ?? dom.attributeDic["alt width"] ?? "20"), height: CGFloat(dom.attributeDic["height"] ?? dom.attributeDic["alt height"] ?? "20")))
                     }
                     
                 }
@@ -213,7 +213,7 @@ struct MarkDownParser {
                 if(lastDom.data == "a"){
 //                    results.append(.A(text: dom.data))
                     if(dom.type == .Char){
-                        var href = lastDom.attributeDic["href"]!
+                        var href = lastDom.attributeDic["href"] ?? ""
                         if(href.hasPrefix("http://") || href.hasPrefix("https://")){
                             
                         } else {
@@ -305,7 +305,12 @@ struct MarkDownParser {
 
 extension CGFloat {
     init(_ string:String) {
-        self.init(Double(string)!)
+        if string == "" {
+            self.init(Double("20")!)
+        } else {
+            self.init(Double(string)!)
+        }
+        
     }
 }
 
@@ -319,4 +324,10 @@ extension String {
         tmp = tmp.replacingOccurrences(of: "&amp;", with: "&")
         return tmp
     }
+    
+    
 }
+
+
+
+

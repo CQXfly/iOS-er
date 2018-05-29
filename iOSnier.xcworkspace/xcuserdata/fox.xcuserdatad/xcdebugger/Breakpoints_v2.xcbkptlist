@@ -148,12 +148,12 @@
                   moduleName = "iOSnier"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ytx/project/iOS-er/iOSnier/MarkDownView/MarkDownView.swift"
-                  timestampString = "548756639.093179"
+                  timestampString = "548933846.563743"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "463"
                   endingLineNumber = "463"
-                  offsetFromSymbolStart = "220">
+                  offsetFromSymbolStart = "293">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -163,12 +163,12 @@
                   moduleName = "iOSnier"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ytx/project/iOS-er/iOSnier/MarkDownView/MarkDownView.swift"
-                  timestampString = "548756639.096724"
+                  timestampString = "548933846.567878"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "465"
                   endingLineNumber = "465"
-                  offsetFromSymbolStart = "40">
+                  offsetFromSymbolStart = "29">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -180,7 +180,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSnier/MarkDownView/MarkDownViewParser.swift"
-            timestampString = "548756817.476599"
+            timestampString = "548934162.3514839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "146"

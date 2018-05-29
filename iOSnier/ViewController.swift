@@ -24,6 +24,7 @@ class ViewController: UIViewController {
             
         }
         
+//        UIDevice.rx.or
         
         let header = MJRefreshNormalHeader(refreshingBlock: { [weak self] in
             self?.tableview.mj_header.beginRefreshing()

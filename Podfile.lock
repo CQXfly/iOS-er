@@ -27,6 +27,20 @@ DEPENDENCIES:
   - YogaKit
   - YYKit
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kingfisher
+    - MJRefresh
+    - QXKit
+    - RxCocoa
+    - RxSwift
+    - SKPhotoBrowser
+    - SnapKit
+    - Yoga
+    - YogaKit
+    - YYKit
+
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
@@ -42,4 +56,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 1dff37a404538f2f16c7ef2be72485076029ba16
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

@@ -20,8 +20,8 @@ class ReplyCellViewModel {
         } else {
             self.username = model.username
         }
-        
-        self.avatar = "http://7xibfi.com1.z0.glb.clouddn.com/" + model.avatar_template.replacingOccurrences(of: "{size}", with: "64")
+     
+        self.avatar = "http://cdn.iosre.com" + model.avatar_template.replacingOccurrences(of: "{size}", with: "64")
         
         self.markDownV = MarkDownView()
         self.markDownV.url = model.cooked

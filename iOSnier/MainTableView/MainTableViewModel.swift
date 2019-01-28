@@ -59,7 +59,7 @@ public class MainTableViewModel {
             return user.id == userID
             }.map({ ( user) in
                 let avatar = user.avatar_template.replacingOccurrences(of: "{size}", with: "64")
-                let user1 = User(id: user.id, username: user.username, avatar_template: "http://7xibfi.com1.z0.glb.clouddn.com/"+avatar)
+                let user1 = User(id: user.id, username: user.username, avatar_template: "http://cdn.iosre.com/"+avatar)
                 return user1
             }).first
     }

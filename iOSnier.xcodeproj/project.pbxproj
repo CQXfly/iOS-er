@@ -328,7 +328,6 @@
 				98C43F6F20624C3100FC1A57 /* Frameworks */,
 				98C43F7020624C3100FC1A57 /* Resources */,
 				AE592BC306E8A4749C6D8C90 /* [CP] Embed Pods Frameworks */,
-				B20F28E045BA866BC0BCFF35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -505,21 +504,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSnier/Pods-iOSnier-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B20F28E045BA866BC0BCFF35 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSnier/Pods-iOSnier-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

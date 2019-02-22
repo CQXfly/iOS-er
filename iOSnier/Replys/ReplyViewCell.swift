@@ -13,9 +13,9 @@ class ReplyViewCell: UITableViewCell {
     
     var vm: ReplyCellViewModel? {
         didSet {
-            contentView.removeAllSubviews()
+            line.removeAllSubviews()
             setupUI()
-            contentView.addSubview(vm!.markDownV)
+            self.line.addSubview(vm!.markDownV)
             
             self.avatar.kf.setImage(with: URL(string: vm!.avatar), placeholder: nil, options: [], progressBlock: nil) { (a, b, c, d) in
                 self.avatar.image = a
@@ -45,7 +45,7 @@ class ReplyViewCell: UITableViewCell {
     var markdown: MarkDownView? {
         didSet {
             markdown?.snp.makeConstraints{
-                $0.bottom.equalTo(self.line.snp.top)
+                $0.bottom.equalTo(self.line.snp.bottom)
                 $0.leading.equalToSuperview()
                 $0.trailing.equalToSuperview()
                 $0.top.equalTo(self.avatar.snp.bottom).offset(8)
@@ -68,17 +68,18 @@ class ReplyViewCell: UITableViewCell {
     private func setupUI(){
         self.avatar = UIImageView()
         self.usernameLabel = UILabel()
-        self.line.backgroundColor = UIColor.gray
+        self.line.backgroundColor = UIColor.lightGray
+        self.line.layer.cornerRadius = 4;
         contentView.addSubview(self.line)
         self.line.snp.makeConstraints{
-            $0.height.equalTo(1)
-            $0.bottom.equalTo(self.contentView.snp.bottom)
-            $0.leading.equalTo(0)
-            $0.trailing.equalTo(0)
+            $0.top.equalTo(self.contentView.snp.top).offset(10);
+            $0.bottom.equalTo(self.contentView.snp.bottom).offset(-10)
+            $0.leading.equalTo(20)
+            $0.trailing.equalTo(-20)
         }
         
         
-        contentView.addSubview(self.avatar)
+        self.line.addSubview(self.avatar)
         self.avatar.snp.makeConstraints{
             $0.leading.equalTo(8)
             $0.top.equalTo(8)
@@ -87,7 +88,7 @@ class ReplyViewCell: UITableViewCell {
         }
         
         
-        contentView.addSubview(self.usernameLabel)
+        self.line.addSubview(self.usernameLabel)
         self.usernameLabel.font = UIFont.systemFont(ofSize: 16)
         self.usernameLabel.snp.makeConstraints{
             $0.leading.equalTo(self.avatar.snp.trailing).offset(8)

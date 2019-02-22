@@ -25,7 +25,7 @@ class ReplyCellViewModel {
         
         self.markDownV = MarkDownView()
         self.markDownV.url = model.cooked
-        self.height = self.markDownV.mdHeight + 48
+        self.height = self.markDownV.mdHeight + 48 + 20
         
     }
 }

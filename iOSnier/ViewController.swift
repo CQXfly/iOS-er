@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         
         tableview.mj_header = header
         
+        tableview.estimatedRowHeight = 300;
         
         let footer = MJRefreshBackFooter(refreshingBlock: { [weak self] in
             
@@ -85,9 +86,6 @@ extension ViewController : UITableViewDelegate {
         
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 190.0
-    }
 }
 
 extension ViewController:UITableViewDataSource {

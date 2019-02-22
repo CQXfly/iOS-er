@@ -12,6 +12,8 @@ import Kingfisher
 
 class MainTableCell : UITableViewCell {
     
+    @IBOutlet weak var backView: UIView!
+    
     @IBOutlet weak var header: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -64,8 +66,21 @@ class MainTableCell : UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+        configureBackGround()
+    
+        backView.backgroundColor = UIColor.lightGray
+        backView.layer.cornerRadius = 4
+        
+        backView.snp.makeConstraints { (maker) in
+            maker.leading.equalTo(self.contentView).offset(20)
+            maker.top.equalToSuperview().offset(10)
+            maker.trailing.equalToSuperview().offset(-20)
+            maker.bottom.equalToSuperview().offset(-10)
+        }
+        
         categoryLabel.snp.makeConstraints { (maker) in
-            maker.trailing.equalToSuperview().offset(-16)
+            maker.trailing.equalTo(self.backView).offset(-16)
             maker.top.equalToSuperview()
         }
         
@@ -81,6 +96,7 @@ class MainTableCell : UITableViewCell {
             make.centerY.equalTo(header.snp.centerY)
         }
         
+        topicLabel.numberOfLines = 0
         topicLabel.snp.makeConstraints { (maker) in
             maker.left.equalToSuperview().offset(16)
             maker.trailing.equalToSuperview().offset(-16)
@@ -93,20 +109,27 @@ class MainTableCell : UITableViewCell {
         }
         
         lastPostLabel.snp.makeConstraints { (make) in
-            make.trailing.equalToSuperview().offset(-16)
+            make.trailing.equalTo(self.backView).offset(-16)
             make.top.equalTo(createTimeLabel)
         }
         
         postCountLabel.snp.makeConstraints { (make) in
             make.leading.equalTo(topicLabel.snp.leading)
             make.top.equalTo(createTimeLabel.snp.bottom ).offset(16)
+            make.bottom.equalTo(self.backView.snp.bottom).offset(-4)
         }
         
         replyCountLabel.snp.makeConstraints { (make) in
             make.trailing.equalTo(lastPostLabel)
             make.top.equalTo(postCountLabel)
+            make.bottom.equalTo(self.backView.snp.bottom).offset(-4)
         }
         
+        
+    }
+    
+    func configureBackGround() {
+
         
     }
 }
